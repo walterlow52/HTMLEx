@@ -126,13 +126,42 @@
       section. </i> </p>
     
     <h1> LINKS </h1>
+    <p> HTML allows users to click and jump to different webpages by using hyperlinks. HTML links uses the "a" tag and must have the "href" attribute since it's the link's 
+      destination. The content between the "a" starting and ending tags will be the link shown as text that is displayed to the user. It will still function as a hyperlink and 
+      send the user to the new URL when clicked. Below is an example: </p> <br>
     <a href = "https://www.google.com"> Click to go to Google </a>
     <br>
-    
+    <p> HTML hyperlinks have another important attribute known as the "target" attribute. By default, the "target" attribute will have the "_self" value. However, the user can 
+      freely choose from the following values: "_self", "_blank", "_parent", and "_top". </p> <br>
+    <p> The "_self" value from the "target" attribute will open the link in the same window/tab. <p>
+    <a href = "https://www.google.com" target = "_self"> Click to go to Google </a> <br>
+    <p> The "_blank" value from the "target" attribute will open the link in a new window/tab. <p>
+    <a href = "https://www.google.com" target = "_blank"> Click to go to Google </a> <br>
+    <p> The "_parent" value from the "target" attribute will open the link in the parent frame. <p>
+    <a href = "https://www.google.com" target = "_parent"> Click to go to Google </a> <br>
+    <p> The "_top" value from the "target" attribute will open the link in a full body of the window. <p>
+    <a href = "https://www.google.com" target = "_top"> Click to go to Google </a> <br>
+    <p> HTML links can be specified through an Absolute URL or a Relative URL as shown below <i> in the HTML source code </i>. </p> <br>
+    <p> Absolute URL: <a href = "https://www.google.com"> Click to go to Google </a> </p>
+    <p> Relative URL: <a href = "google.com"> Click to go to Google </a> </p> <br>
+    <p> HTML Links can also be displayed as images while having the full capabilities of hyperlinks by putting the "img" tag in the content section of the "a" tag. </p>
+    <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" target = "_blank">
+      <img src = "https://media.musclegrid.io/thekarateedge.com/uploads/2017/05/13234502/click-here-to-enroll.png" width = "300" height = "300">
+    </a>
+    <br>
+    <p> HTML buttons can also be used to access different hyperlinks as shown below. </p>
+    <button onclick = "document.location='https://www.youtube.com/watch?v=dQw4w9WgXcQ'"> Rick Roll Button </button>
+    <br>
+    <p> Using the title attribute, HTML links can display extra information as a tooltip which is shown when the mouse hovers over the title of the link. </p>
+    <a href = "https://www.google.com" title = "Click to search on Google"> Google </a> <br>
+     <!-- Link colors -->
+      
     <img src = "https://wallpaper.dog/large/20345592.jpg" alt = "One Piece image" width = "700" height = "700"> </img>
   <br>
   
   <address>
+    <br>
+    <strong> <i> More About Me </i> </strong> <br>
     Created by <em> Walter Low. </em> <br>
     Email: walterlow52@gmail.com <br>
     Instagram: <a href = "https://www.instagram.com/footloosebronco/" target = "_blank"> Check out my Instagram! </a> <br>
