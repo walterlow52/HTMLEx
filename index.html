@@ -7,6 +7,7 @@
     <style>
       body {background-color: navy;}
       .main {font-family: Times New Roman; color: white;}
+      #uni {font-family: Copperplate;}
     </style>
   </head>
   <body> <!-- Defines the page's body which contains the displayable contents -->
@@ -195,7 +196,7 @@
     stylesheets and Javascript scripts to access and manipulate elements within the class. To create a class, the syntax starts with a period (.) followed by the class name and 
     curly braces where in between is the properties for the class. The user can have multiple classes for each HTML element and different elements can even share the same class.
     Note: the class name is case sensitive. In this example, the class will be declared in the head section (found in the HTML source code) and below, the class will be called 
-    with the div and span elements below and if done correctly, the example paragraphs will be in the Times New Roman font with a white text color. 
+    with the div and span elements below and if done correctly, the example paragraphs will be in the Times New Roman font with a white text color. </p> <br>
     
     <div class = "main">
       <p> Hello World! </p>
@@ -204,6 +205,20 @@
   <br>
   
   <h1> IDS </h1>
+  <p> The HTML "id" attribute allows the user to specify a unique id for HTML elements. Multiple elements can't have the same id unlike HTML classes. The value of the id
+    attribute must be unique within the HTML page. Just like HTML classes, the "id" attribute can be used in CSS stylesheets and Javascript scripts and the syntax are the same, 
+    but instead the "id" attribute uses a hashtag character (#) instead of the period character that the classes use when declaring them. "Ids" are also case sensitive and must
+    have at least one character, can't have spaces, and can't start with a number. In this example, the id will be declared in the head section (HTML source code) and below, the
+    heading will have its font changed to the copperplate font. </p> <br>
+    
+  <h1 id = "uni"> Hello World! </h1>
+  <br>
+  
+  <p> Thanks to the "id" attribute, they can serve as bookmarks which can be used to jump from one section of the webpage to another section. This is done by creating an id and 
+    then adding a link to the id. When the link is clicked, the page will automatically scroll to the bookmarked link. </p>
+  <!-- Create sections at top of page where user can use to scroll to different parts of HTML page; use this example to put user back to top of page. -->
+  
+  <h1> IFRAMES </h1>
     
   <address>
     <br>
