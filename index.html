@@ -7,6 +7,7 @@
     <meta name = "author" content = "Walter Low"> <!-- defining author -->
     <meta http-equiv = "refresh" content = "90"> <!-- defining the time it takes to refresh the HTML document -->
     <meta name - "viewport" content = "width=device-width, initial-scale=1.0"> <!-- defining viewports -->
+    <base href = "https://walterlow52.github.io/HTMLEx/" target = "_blank">
     <link rel = "stylesheet" href = "styling.css">
     <title> HTML Self-Project Page </title>
     <link rel = "icon" type = "image/x-icon" href = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF1Ys41d8W_qJGGkV5T52KJDSsL6auAc4iow&usqp=CAU">
@@ -15,6 +16,9 @@
       .main {font-family: Times New Roman; color: white;}
       #uni {font-family: Copperplate;}
     </style>
+    <script>
+        document.getElementbyId("head").innerHTML = "Hello! This is from Javascript! Make sure to check out the Javascript section if you haven't already!";
+    </script>
   </head>
   <body> <!-- Defines the page's body which contains the displayable contents -->
     <h1> INTRODUCTION </h1>
@@ -262,7 +266,8 @@
     file which includes Web pages, Images, Stylesheets, and Javascripts. <br> Absolute file paths provides the full URL to a file. Below is an example of an image
     being implemented using an absolute path. </p>
   
-  <img src = "https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" alt = "Example GIF"> </img>
+  <img src = "https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" alt = "Example GIF"> 
+  </img>
   
 <p> A relative file path points out the file relative to the current page. Relative paths are the best paths to practice. When using relative paths, the web pages
   won't be bound to the current base URL. 
@@ -279,8 +284,13 @@
     "link" tag. <br> The HTML "meta" element is used to specify the character sets, page descriptions, keywords, author of the document, and viewport settings. It 
     will not be displayed on the pages, but the "meta" will be used by browsers (to display and reload content), search engines (particularly keywords), and other 
     web services if necessary. <br> The viewports is the region of area where the user can view on their device. Viewports can vary, based on the user's device 
-    whether it's a computer, laptop, tablet, smartphone, etc. The "viewports" attriubte allows the browser to receive instructions on how the web page should be 
-    <i> In order to see examples of this section, view the head section of the HTML source code. </i> </p> <!-- Not finished -->
+    whether it's a computer, laptop, tablet, smartphone, etc. The "viewports" attriubte allows the browser to receive instructions on how the web page should be scaled 
+    and lays out the dimensions. The "width=device-width" sets the width for the page in order to follow the built in screen width of the user's device. The "initial-
+    scale=1.0" sets the zoom level when the page loads into the browser. <br> The HTML "script" element implements client-side Javascripts. 
+<p id = "head"> </p>
+    <i> See Javascript section to learn more about Javascript in HTML. <br> The HTML "base" element specifies the base URL and targets all relative URLs in an HTML 
+      page. The "base" tag can include a "href" and/or a "target" attribute. However, it's important to note that there can only be one "base" element in an HTML page. 
+    <i> In order to see examples of this section, view the head section of the HTML source code. </i> </p>
   
   <h1> LAYOUT </h1>
   
