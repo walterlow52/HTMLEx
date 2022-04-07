@@ -17,8 +17,9 @@
       #uni {font-family: Copperplate;}
     </style>
     <script>
-        document.getElementbyId("head").innerHTML = "Hello! This is from Javascript! Make sure to check out the Javascript section if you haven't already!";
+        document.getElementById("head").innerHTML = "Hello! This is from Javascript! Make sure to check out the Javascript section if you haven't already!";
     </script>
+    <noscript> Your browser does not meet the Javascript requirements for this page. </noscript>
   </head>
   <body> <!-- Defines the page's body which contains the displayable contents -->
     <h1> INTRODUCTION </h1>
@@ -122,7 +123,7 @@
     <bdo dir = "rtl"> One Piece </bdo> <br>
     
     <h1> COMMENTS </h1>
-    <p> NYI - See in HTML source code </p> <br>
+    <p> See in HTML source code </p> <br>
     <!-- This is a comment. -->
     
     <h1> COLORS </h1>
@@ -256,10 +257,14 @@
   <h1> JAVASCRIPT </h1>
   <p> This will be a simple introduction of JavaScript. To learn more about Javascript, a Javascript file will be created and asscessible for the user to view at a
     later time. <i> Javascript scripts will be located at the bottom of the HTML source code below the body section. </i> This first example is a button and when 
-  clicked, it will display the time and date. </p> 
-  
-  <button type = "button" onclick = "js"> Click for the current Date and Time </button>
-  <!-- Not finished -->
+  clicked, it will display the time and date. </p>  
+  <button type = "button" onclick = "document.getElementById('js').innerHTML = Date()"> Click for the current Date and Time </button>
+  <p id = "js"> </p>
+  <p> The HTML "script" tag is used to implement a client-side Javascript. The "script" element can contain script tags within the HTML code, or it can be linked
+    through an external Javascript file. Javascript is commonly used for dynamic changes in content and form validation. The most common method users will use from 
+    Javascript to use on their HTML page would be the "document.getElementByID" command. Javascript can go so far to change CSS styles and HTML attributes. The HTML
+    "noscript" tag allows the user to define an alternate amount of content that will be displayed to users if the browser ever encounters scripts that are not 
+    supported or disabled. <i> See the head section for the script tags that were used in this HTML page. </i>
   
   <h1> FILE PATHS </h1>
   <p> An HTML file path is used to describe the location of a file in the website's folder structure. They are typically used when the user wants to link an extenal
@@ -345,13 +350,8 @@
     
   
   <h6> Web page is still WIP and some parts of the page are NYI. View the HTML source code to find the technical code of HTML page.<br> *To view HTML source code, 
-    right click on webpage and click "View Page Source". To inspect HTML webpage and elements, right click on webpage and click "Inspect".* <br> Source: 
-    https://www.w3schools.com/ </h6>
+    right click on webpage and click "View Page Source". To inspect HTML webpage and elements, right click on webpage and click "Inspect".* <br> Look out for my next 
+    project: My Linktree <br> Source: https://www.w3schools.com/ </h6>
   
   </body>
-
-<script>
-  document.getElementbyID('js').innerHTML = Date();
-</script>
-
 </html>
