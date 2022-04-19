@@ -34,6 +34,7 @@
       known as empty elements. All HTML pages should be nested HTML elements, which is when elements contain other elements. For example, the "html" tag must contain 
       "head" and "body" starting and ending tags inside the "html" tag. <br> Some HTML tags don't require an ending tag, but it is always recommended to include them 
       to avoid errors and bugs. HTML is not case sensitive, but it is recommended to use lowercases, at least when it comes to using tags. </p>
+    <p> For the list of available HTML tags, visit <a href = "https://www.w3schools.com/tags/default.asp" target = "_blank"> HTML Tags </a>. </p>
     <br>
     
     <h1> ATTRIBUTES </h1>
@@ -138,7 +139,7 @@
       code for example where the background of the HTML page is changed. </i> </p> <br>
     <p> External CSS can define the CSS styles for multiple HTML pags by creating an external file <i> which can be found in the designated CSS file in this GitHub 
       Repository. External sheets can be referenced through a file name, a full URL, or a relative path. </i> To view the external style sheet reference, <i> see HTML 
-      source code in "head" section. </i> </p>
+      source code in "head" section. </i> <br> <i> See the CSS external file in the source code for more on CSS styling. </i> </p>
     
     <h1> LINKS </h1>
     <p> HTML allows users to click and jump to different webpages by using hyperlinks. HTML links uses the "a" tag and must have the "href" attribute since it's the 
@@ -306,10 +307,47 @@
   <h1> SEMANTICS </h1>
   
   <h1> STYLE GUIDE </h1>
+<p> It's essential to have clean and organized HTML code to make it easy to read and understand. This section goes over many different ways to keep HTML code neat. 
+  Firstly, use lowercase element names since mixing uppercase and lowercase is confusing, developers normally use lowercase, it looks cleaner, and it's easier to use.
+  Always declare the document type in the first line of the document and its corresponding tags below. Make sure to close all HTML elements, even if it may work
+  without ending tags. Also, use lowercase attribute names and quote attribute values since developers do it, it makes the value easier to read, and it won't take the
+  value if there is a space in between. Always specify height, width, and alt for images to reduce flickering and creates alternate text if the image can't load into
+  the page. HTML allows spaces around equal signs but no spaces is easier to read and groups entities better. Avoid using long code lines so the user doesn't have to 
+  scroll left and right to view the code. Don't add blank lines, spaces, or indentations for no reason. Adding blank lines is useful however for seperating large code
+  blocks and two spaces of indentation is good enough for seperating entities. Never skip the title element because it is a requirement for HTML since SEOs use the 
+  page title using search engine algorithms to order pages in search results. HTML and body tags are strongly recommended to be added, even if the page will still work
+  since it can cause errors for old browsers and can possibly crash the DOM and XML software. The same goes for the head tag, but there will be no consequences if the 
+  head tag isn't included since the browser will automatically create a head section for code before the body. It is optional to close empty elements, but it's still
+  recommended to close them in the chance of using XML or XHTML. You should always include the lang attribute to declare the official language of the HTML page to 
+  assist search engines and browsers. For proper interpretation and search engine indexing, the charset should be defined as early as possible in the HTML code. The 
+  viewport should be included since it sets the user's visible area of the page whether it's a small screen like a phone or big as a monitor or TV using the meta tag. 
+  Comments should be included when necessary to explain certain parts of the code for viewers to understand and it's recommended to use two spaces of indentation for 
+  comments. Use simple syntax when referencing external style sheets. For CSS styling in HTML pages, short CSS code can be compressed into one line but for long CSS 
+  code, write them using multiple lines with the styling code in between the brackets having two spaces of indentation. The same goes for Javascripts, with its own 
+  additional styling found in the Javascript portion of the HTMLEx program. Use lowercase file names since some web servers are case sensitive. HTML files should have
+  an .html extension, CSS files should have a .css extension, and Javascript files should have a .js extension. Lastly, when a URL doesn't have a specified name, the 
+  server creates a default filename and it's important to keep note of the filename that is used for your HTML project. </p>
   
   <h1> ENTITIES </h1>
+<p> HTML reserved characters must be replaced with character entities. For example, the user may not be able to use the less than or greater than symbols since the 
+  browser may mistake them for the starting or ending tag. Therefore, character entities are used to display HTML reserved characters in HTML pages. To display a less
+  than symbol, it will be displayed as &lt; or &#60; <i> see source code </i>. The advantage of using an entity name is that it's easy to remember while the 
+  disadvantage is that browsers may not support all entity names since they mostly support entity numbers. A common entity in HTML is the non-breaking space (&nbsp);,
+  which is a space that doesn't break into a new line. This is useful when the user doesn't want to break any words as well as it prevents browsers from spacing in
+  HTML pages. It's important to note that entity names are case sensitive. <br> Diacritical marks are "glyphs" added to a letter. They can appear ablove or below a 
+  letter, inside, and/or in between two letters. Diacritical marks can be used with alphanumeric characters to produce characters that aren't typically in the 
+  character set. An example of this is a&#768;. </p>
   
   <h1> SYMBOLS </h1>
+<p> HTML symbols not present on the keyboard can be added using entities. For example, many mathematical, technical, and currency symbols aren't on a typical computer
+  keyboard. However, they can be added to an HTML page using the entity name or number as well as the corresponding syntax for the symbol. </p>
+
+<p> Your total for HTMLEx will come up to 500 &euro; </p>
+
+<p> Check these links for all the symbols HTML supports: </p>
+<a href = "https://www.w3schools.com/charsets/ref_utf_currency.asp" target = "_blank"> HTML Currency </a>
+<a href = "https://www.w3schools.com/charsets/ref_utf_arrows.asp" target = "_blank"> HTML Arrows </a>
+<a href = "https://www.w3schools.com/charsets/ref_utf_symbols.asp" target = "_blank"> HTML Symbols </a>
   
   <h1> EMOJIS </h1>
 <p> HTML emojis can be used from the UTF-8 charset. Emojis may look like images or icons, but they are actually inputted as letters and characters in the UTF-8 
@@ -317,9 +355,18 @@
   page correctly. This is why we include the "meta" tag <i> (see meta tag in head section of HTML source code) </i>. Although, if not specified, UTF-8 is the default 
   charset in HTML. However, many UTF-8 characters can't be typed on keyboards (like emojis), so we will have to use numbers to display them. For example, A is 65, B
   is 66, C is 67, and vice versa. The syntax for displaying characters using numbers is "&#number;". For example, to get the emoji with the heart eyes, it will be 
-  displayed as &#128525;. 
+  displayed as &#128525;. Emojis are characters, therefore, they can be copied, displayed, and sized like any other HTML character. </p>
+
+<p style = "font-size:60px"> &#128513; </p>
+
+<p> The following link is a list of emojis that HTML can support as well as its corresponding number codes. </p>
+<a href = "https://www.w3schools.com/charsets/ref_emoji.asp" target = "_blank"> HTML Emojis </a>
   
   <h1> CHARSET </h1>
+<p> A web browser must first know which cahracter set to use in order to display an HTML page correctly. This is why we use the "meta" tag in the head section to tell
+  the browser which charset to use. The default character set for HTML5 is UTF-8. UTF-8 is identical to ASCII for values 0 to 127 and doesn't use values 128 to 159. 
+  UTF-8 is identical to the ANSI and 8859-1 character set for values 160 to 255. UTF-8 continues from value 256 to 10,000+ different characters. For the complete HTML
+  character set, follow the link <a href = "https://www.w3schools.com/charsets/default.asp" target = "_blank"> HTML Charset </a> </p>
   
   <h1> URL ENCODE </h1>
 <p> Uniform Resource Locators (URLs) are web addresses composed of words or Internet Protocol (IP) addresses. Web browsers request pages from web servers using a URL.
