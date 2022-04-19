@@ -17,19 +17,73 @@
       #uni {font-family: Copperplate;}
     </style>
     <script>
-        document.getElementById("head").innerHTML = "Hello! This is from Javascript! Make sure to check out the Javascript section if you haven't already!";
+        document.getElementById("headex").innerHTML = "Hello! This is from Javascript! Make sure to check out the Javascript section if you haven't already!";
     </script>
     <noscript> Your browser does not meet the Javascript requirements for this page. </noscript>
   </head>
   <body> <!-- Defines the page's body which contains the displayable contents -->
-    <h1> INTRODUCTION </h1>
-    <h1> Welcome to my HTML project page! </h1>
+    <h1> Welcome to my HTMLEx project page! </h1>
+    
+    <a href = "#introduction"> Introduction </a>
+    <a href = "#element"> Elements </a>
+    <a href = "#attribute"> Attributes </a>
+    <a href = "#heading"> Headings </a>
+    <a href = "#paragraph"> Paragraphs/Texts </a>
+    <a href = "#style"> Styles </a>
+    <a href = "#format"> Formatting </a>
+    <a href = "#quotation"> Quotations </a>
+    <a href = "#comment"> Comments </a>
+    <a href = "#color"> Colors </a>
+    <a href = "#css"> CSS </a>
+    <a href = "#link"> Links </a>
+    <a href = "#image"> Images </a>
+    <a href = "#favicon"> Favicons </a>
+    <a href = "#table"> Tables </a>
+    <a href = "#list"> Lists </a>
+    <a href = "#block/inline"> Block and Inline </a>
+    <a href = "#class"> Classes </a>
+    <a href = "#id"> Ids </a>
+    <a href = "#iframe"> Iframes </a>
+    <a href = "#javascript"> Javascript </a>
+    <a href = "#filepath"> File Paths </a>
+    <a href = "#head"> Head </a>
+    <a href = "#layout"> Layout </a>
+    <a href = "#responsive"> Responsive </a>
+    <a href = "#computer"> Computercode </a>
+    <a href = "#semantic"> Semantics </a>
+    <a href = "#sg"> Style Guide </a>
+    <a href = "#entity"> Entities </a>
+    <a href = "#symbol"> Symbols </a>
+    <a href = "#emoji"> Emojis </a>
+    <a href = "#charset"> Charsets </a>
+    <a href = "#url"> URL Encoding </a>
+    <a href = "#xhtml"> XHTML </a>
+    <a href = "#form"> Forms </a>
+    <a href = "#form_attribute"> Form Attributes </a>
+    <a href = "#form_element"> Form Elements </a>
+    <a href = "#input_type"> Input Types </a>
+    <a href = "#input_attribute"> Input Attributes </a>
+    <a href = "#input_form_attribute"> Input Form Attributes </a>
+    <a href = "#canvas"> Canvas & SVG </a>
+    <a href = "#media"> Media </a>
+    <a href = "#video"> Video </a>
+    <a href = "#audio"> Audio </a>
+    <a href = "#plugin"> Plug ins </a>
+    <a href = "#youtube"> Youtube </a>
+    <a href = "#geolocation"> Geolocation </a>
+    <a href = "#drag/drop"> Drag and Drop </a>
+    <a href = "#web_storage"> Web Storage </a>
+    <a href = "#web_worker"> Web Workers </a>
+    <a href = "#sse"> SSE </a>
+    <a href = "#me"> More about Me </a>
+    
+    <h1 id = "introduction"> INTRODUCTION </h1>
     <br> 
     <p> HTML is the standard markup page for the creation of Web pages. HTML stands for Hypertext Markup Language. HTML describes the structure of a Web page and 
       consists of a series of elements. Overall, HTML tells the browser how to display the content on the web page. </p>
     <br>
     
-    <h1> ELEMENTS </h1>
+    <h1 id = "element"> ELEMENTS </h1>
     <p> HTML elements are the contents stored inside the start and end tags. Note: there are some elements that don't require end tags (like "br"), which are also 
       known as empty elements. All HTML pages should be nested HTML elements, which is when elements contain other elements. For example, the "html" tag must contain 
       "head" and "body" starting and ending tags inside the "html" tag. <br> Some HTML tags don't require an ending tag, but it is always recommended to include them 
@@ -37,7 +91,7 @@
     <p> For the list of available HTML tags, visit <a href = "https://www.w3schools.com/tags/default.asp" target = "_blank"> HTML Tags </a>. </p>
     <br>
     
-    <h1> ATTRIBUTES </h1>
+    <h1 id = "attribute"> ATTRIBUTES </h1>
     <p> HTML attributes provides additional information to HTML elements. This is available to all HTML elements and are specified in the starting tag. Examples of 
       attributes are "href" (used in hyperlinks), src (used in images), "width" and "height" (used in images), "alt" (used in images"), "style" (used for CSS styling), 
       "lang" (used to declare the default language of the Web page, <i> which can be found in the source code for the "html" starting tag </i>), "title", etc. <br> 
@@ -45,7 +99,7 @@
       situations. </p>
     <br>
     
-    <h1> HEADINGS </h1>
+    <h1 id = "heading"> HEADINGS </h1>
     <p> Headings are used for titles ad subtitiles for an HTML webpage. They serve the puropse of organizing the structure and content of the web page. Below are the 
       different types of headings that HTML supports from "h1" tags to "h6" tags. </p>
     <h1> Heading 1 </h1>
@@ -61,7 +115,7 @@
     <h1 style = "font-size: 50px;"> Heading 1 with changed size </h1>
     <br>
     
-    <h1> PARAGRAPHS & TEXTS </h1>
+    <h1 id = "paragraph"> PARAGRAPHS & TEXTS </h1>
     <p> This body of text is created as a paragraph using the "p" tag. Paragraphs are used as a block of text in an HTML page. They always start on a new line and 
       there tends to be some margins before and after paragraphs. Sizes of paragraphs can be resized based on the screen size of the user. <br> The "hr" tag is used to
       create a horizontal break in an HTML page to seperate content. The "br" tag defines a line break for content to start on a new line. Both tags are empty HTML 
@@ -76,7 +130,7 @@
     </pre>
     <br>
     
-    <h1> STYLES </h1>
+    <h1 id = "style"> STYLES </h1>
     <p> The HTML "style" attribute is used to add CSS styles to an element. This can include color, font, size, text-alignment, etc. <i> See it in use through the HTML
       source code. </i> Examples of the style attribute are shown below: </p>
     <br>
@@ -87,7 +141,7 @@
     <p style - "text-align:center;"> This paragraph has its text alignment changed using the "text-align" attribute. </p>
     <br>
     
-    <h1> FORMATTING </h1>
+    <h1 id = "format"> FORMATTING </h1>
     <p> HTML can format several elements in order to define texts with a special meaning. Below are examples of different ways to format HTML text: </p>
     <br>
     <p> <b> This text is bolded using the "b" tag. </b> </p>
@@ -103,7 +157,7 @@
     <br>
     <p> <i> See formatted tags in HTML source code </i> </p>
     
-    <h1> QUOTATIONS </h1>
+    <h1 id = "quotation"> QUOTATIONS </h1>
     <p> HTML pages can quote from other websites using different HTML quoting tags like "blockquote", "q", "abbr", "address", "cite", and "bdo". </p> <br>
     <p> The "blockquote" tag defines a section that is quoted from another source and are usually indented. Below is an example of such: </p>
     <blockquote cite = "https://www.crunchyroll.com/anime-news/2022/03/01/funimation-content-moving-to-crunchyroll-for-worlds-largest-anime-library"> 
@@ -123,14 +177,14 @@
     <p> The "bdo" tag stands for Bi-Directional Override. It overrides the text direction. Below is an example of such: </p> 
     <bdo dir = "rtl"> One Piece </bdo> <br>
     
-    <h1> COMMENTS </h1>
+    <h1 id = "comment"> COMMENTS </h1>
     <p> See in HTML source code </p> <br>
     <!-- This is a comment. -->
     
-    <h1> COLORS </h1>
+    <h1 id = "color"> COLORS </h1>
     <p> WIP - See in https://www.w3schools.com/html/html_colors.asp </p> <br>
     
-    <h1> CSS </h1>
+    <h1 id = "css"> CSS </h1>
     <p> CSS stands for Cascading Style Sheets. CSS is used to format the layout of the HTML webpage. It has 3 ways of being added into HTML pages. This is inline CSS, 
       Internal CSS, and External CSS. </p> <br>
     <p> Inline CSS applies a CSS style to a single HTML element by using the style attribute on an HTML element as shown below <i> in HTML source code </i>. </p>
@@ -141,7 +195,7 @@
       Repository. External sheets can be referenced through a file name, a full URL, or a relative path. </i> To view the external style sheet reference, <i> see HTML 
       source code in "head" section. </i> <br> <i> See the CSS external file in the source code for more on CSS styling. </i> </p>
     
-    <h1> LINKS </h1>
+    <h1 id = "link"> LINKS </h1>
     <p> HTML allows users to click and jump to different webpages by using hyperlinks. HTML links uses the "a" tag and must have the "href" attribute since it's the 
       link's destination. The content between the "a" starting and ending tags will be the link shown as text that is displayed to the user. It will still function as 
       a hyperlink and send the user to the new URL when clicked. Below is an example: </p> <br>
@@ -172,21 +226,22 @@
     <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" title = "Click to search on Google" target = "_blank"> Google </a> <br>
      <!-- Link colors -->
       
-    <h1> IMAGES </h1>
+    <h1 id = "image"> IMAGES </h1>
     <img src = "https://wallpaper.dog/large/20345592.jpg" alt = "One Piece image" width = "700" height = "700"> </img> <!-- TO be continued -->
   <br>
   
-  <h1> FAVICONS </h1>
-  <p> A favicon is the small image displayed next to the webpage title in the browser tab. <i> To see how the favicon is implemented into the site, view the HTML 
-    source code under the head section below the title line. </i> </p>
+  <h1 id = "favicon"> FAVICONS </h1>
+  <p> A favicon is the small image displayed next to the webpage title in the browser tab. The user can pick their desired favicon as if it was an image. The image can
+    be from a file on the user's computer or an image from the Internet. <i> To see how the favicon is implemented into the site, view the HTML source code under the 
+    head section below the title line. </i> </p>
     
-  <h1> TABLES </h1> 
+  <h1 id = "table"> TABLES </h1> 
   <p> HTML tables arranges datas into rows and columns. </p> <!-- To be continued -->
   
-  <h1> LISTS </h1> 
+  <h1 id = "list"> LISTS </h1> 
   <p> HTML lists groups a set of items or data into ordered and/or unordered lists. </p> <!-- To be continued. -->
   
-  <h1> BLOCK AND INLINE </h1>
+  <h1 id = "block/inline"> BLOCK AND INLINE </h1>
   <p> Every HTML element has a display value. However, in HTML, there are two types of display values. These two types are block and inline. <br> Block-level elements 
     are elements that alawys start on new lines along with the browser adding a margin before and after the element. Block-level elements typically takes up the full 
     width of the display. The most commonly used block elements are the "p" and "div" tags. Other block elements are the "address", "article", "aside", "blockquote", 
@@ -204,8 +259,8 @@
   <p> My favorite <span style = "background-color: red; color: blue;"> Spider Man </span> is Tobey Maguire. </p>
   <br>
   
-  <h1> CLASSES </h1>
-  <p> The HTML "class" attribute specifies a class for an HMTL element. With the "class" attribute, multiple HTML elements can share the same class. This can also be 
+  <h1 id = "class"> CLASSES </h1>
+  <p> The HTML "class" attribute specifies a class for an HTML element. With the "class" attribute, multiple HTML elements can share the same class. This can also be 
     used in CSS stylesheets and Javascript scripts to access and manipulate elements within the class. To create a class, the syntax starts with a period (.) followed 
     by the class name and curly braces where in between is the properties for the class. The user can have multiple classes for each HTML element and different 
     elements can even share the same class. Note: the class name is case sensitive. In this example, the class will be declared in the head section (found in the HTML 
@@ -218,7 +273,7 @@
   <p> Hello <span class = "main"> Beautiful </span> World! </p>
   <br>
   
-  <h1> IDS </h1>
+  <h1 id = "id"> IDS </h1>
   <p> The HTML "id" attribute allows the user to specify a unique id for HTML elements. Multiple elements can't have the same id unlike HTML classes. The value of the 
     id attribute must be unique within the HTML page. Just like HTML classes, the "id" attribute can be used in CSS stylesheets and Javascript scripts and the syntax 
     are the same, but instead the "id" attribute uses a hashtag character (#) instead of the period character that the classes use when declaring them. "Ids" are also 
@@ -232,7 +287,7 @@
     an id and then adding a link to the id. When the link is clicked, the page will automatically scroll to the bookmarked link. </p>
   <!-- Create sections at top of page where user can use to scroll to different parts of HTML page; use this example to put user back to top of page. -->
   
-  <h1> IFRAMES </h1>
+  <h1 id = "iframe"> IFRAMES </h1>
   <p> An HTML IFRAME is a web page displayed in a web page. This is done by using the "iframe" tag to specify an inline frame. The inline frame allows the HTML page to
     embed another document with the HTML document. Below is the iframe displaying one of my go to anime websites. <br> </p>
     
@@ -255,7 +310,7 @@
   <iframe src = "https://www2.kickassanime.ro/" name = "switch" title = "Anime Website" height = "500" width = "700"> </iframe> <br>
   <a href = "https://www2.kickassanime.ro/anime/one-piece-779470" target = "switch"> One Piece </a>
   
-  <h1> JAVASCRIPT </h1>
+  <h1 id = "javascript"> JAVASCRIPT </h1>
   <p> This will be a simple introduction of JavaScript. To learn more about Javascript, a Javascript file will be created and asscessible for the user to view at a
     later time. <i> Javascript scripts will be located at the bottom of the HTML source code below the body section. </i> This first example is a button and when 
   clicked, it will display the time and date. </p>  
@@ -267,7 +322,7 @@
     "noscript" tag allows the user to define an alternate amount of content that will be displayed to users if the browser ever encounters scripts that are not 
     supported or disabled. <i> See the head section for the script tags that were used in this HTML page. </i>
   
-  <h1> FILE PATHS </h1>
+  <h1 id = "filepath"> FILE PATHS </h1>
   <p> An HTML file path is used to describe the location of a file in the website's folder structure. They are typically used when the user wants to link an extenal
     file which includes Web pages, Images, Stylesheets, and Javascripts. <br> Absolute file paths provides the full URL to a file. Below is an example of an image
     being implemented using an absolute path. </p>
@@ -278,7 +333,7 @@
 <p> A relative file path points out the file relative to the current page. Relative paths are the best paths to practice. When using relative paths, the web pages
   won't be bound to the current base URL. 
 
-  <h1> HEAD </h1>
+  <h1 id = "head"> HEAD </h1>
   <p> The HTML "head" element contains the meta information of the HTML page. It is a container for the "title", "style", "meta", "link", "script", and the "base"
     element. The "head" element is located in the HTML code between the "html" tag and the "body" tag. The information inside the "head" tags will not be displayed in
     the HTML page. The "head" section is responsible for defining the document's title, character set, styles, scripts, and/or any other meta information that the user
@@ -293,20 +348,20 @@
     whether it's a computer, laptop, tablet, smartphone, etc. The "viewports" attriubte allows the browser to receive instructions on how the web page should be scaled 
     and lays out the dimensions. The "width=device-width" sets the width for the page in order to follow the built in screen width of the user's device. The "initial-
     scale=1.0" sets the zoom level when the page loads into the browser. <br> The HTML "script" element implements client-side Javascripts. 
-<p id = "head"> </p>
+<p id = "headex"> </p>
     <i> See Javascript section to learn more about Javascript in HTML. <br> The HTML "base" element specifies the base URL and targets all relative URLs in an HTML 
       page. The "base" tag can include a "href" and/or a "target" attribute. However, it's important to note that there can only be one "base" element in an HTML page. 
     In order to see examples of this section, view the head section of the HTML source code. </i> </p>
   
-  <h1> LAYOUT </h1>
+  <h1 id = "layout"> LAYOUT </h1>
   
-  <h1> RESPONSIVE </h1>
+  <h1 id = "responsive"> RESPONSIVE </h1>
   
-  <h1> COMPUTERCODE </h1>
+  <h1 id = "computer"> COMPUTERCODE </h1>
   
-  <h1> SEMANTICS </h1>
+  <h1 id = "semantic"> SEMANTICS </h1>
   
-  <h1> STYLE GUIDE </h1>
+  <h1 id = "sg"> STYLE GUIDE </h1>
 <p> It's essential to have clean and organized HTML code to make it easy to read and understand. This section goes over many different ways to keep HTML code neat. 
   Firstly, use lowercase element names since mixing uppercase and lowercase is confusing, developers normally use lowercase, it looks cleaner, and it's easier to use.
   Always declare the document type in the first line of the document and its corresponding tags below. Make sure to close all HTML elements, even if it may work
@@ -328,7 +383,7 @@
   an .html extension, CSS files should have a .css extension, and Javascript files should have a .js extension. Lastly, when a URL doesn't have a specified name, the 
   server creates a default filename and it's important to keep note of the filename that is used for your HTML project. </p>
   
-  <h1> ENTITIES </h1>
+  <h1 id = "entity"> ENTITIES </h1>
 <p> HTML reserved characters must be replaced with character entities. For example, the user may not be able to use the less than or greater than symbols since the 
   browser may mistake them for the starting or ending tag. Therefore, character entities are used to display HTML reserved characters in HTML pages. To display a less
   than symbol, it will be displayed as &lt; or &#60; <i> see source code </i>. The advantage of using an entity name is that it's easy to remember while the 
@@ -338,7 +393,7 @@
   letter, inside, and/or in between two letters. Diacritical marks can be used with alphanumeric characters to produce characters that aren't typically in the 
   character set. An example of this is a&#768;. </p>
   
-  <h1> SYMBOLS </h1>
+  <h1 id = "symbol"> SYMBOLS </h1>
 <p> HTML symbols not present on the keyboard can be added using entities. For example, many mathematical, technical, and currency symbols aren't on a typical computer
   keyboard. However, they can be added to an HTML page using the entity name or number as well as the corresponding syntax for the symbol. </p>
 
@@ -349,7 +404,7 @@
 <a href = "https://www.w3schools.com/charsets/ref_utf_arrows.asp" target = "_blank"> HTML Arrows </a>
 <a href = "https://www.w3schools.com/charsets/ref_utf_symbols.asp" target = "_blank"> HTML Symbols </a>
   
-  <h1> EMOJIS </h1>
+  <h1 id = "emoji"> EMOJIS </h1>
 <p> HTML emojis can be used from the UTF-8 charset. Emojis may look like images or icons, but they are actually inputted as letters and characters in the UTF-8 
   charset. (UTF-8 covers almost all of the characters and symbols in the world). A web browser must know the character set used in the page in order to display an HTML
   page correctly. This is why we include the "meta" tag <i> (see meta tag in head section of HTML source code) </i>. Although, if not specified, UTF-8 is the default 
@@ -362,13 +417,13 @@
 <p> The following link is a list of emojis that HTML can support as well as its corresponding number codes. </p>
 <a href = "https://www.w3schools.com/charsets/ref_emoji.asp" target = "_blank"> HTML Emojis </a>
   
-  <h1> CHARSET </h1>
+  <h1 id = "charset"> CHARSET </h1>
 <p> A web browser must first know which cahracter set to use in order to display an HTML page correctly. This is why we use the "meta" tag in the head section to tell
   the browser which charset to use. The default character set for HTML5 is UTF-8. UTF-8 is identical to ASCII for values 0 to 127 and doesn't use values 128 to 159. 
   UTF-8 is identical to the ANSI and 8859-1 character set for values 160 to 255. UTF-8 continues from value 256 to 10,000+ different characters. For the complete HTML
   character set, follow the link <a href = "https://www.w3schools.com/charsets/default.asp" target = "_blank"> HTML Charset </a> </p>
   
-  <h1> URL ENCODE </h1>
+  <h1 id = "url"> URL ENCODE </h1>
 <p> Uniform Resource Locators (URLs) are web addresses composed of words or Internet Protocol (IP) addresses. Web browsers request pages from web servers using a URL.
   URLs addresses documents on the web. The format of a URL is <i> scheme://prefix.domain:port/path/filename </i>. <i> Scheme </i> defines the type of Internet service
   used (most commmonly http or https). <i> Prefix </i> defines the domain prefix (most commonly www.). <i> Domain </i> defines the Internet domain name. <i> Port </i>
@@ -378,7 +433,7 @@
   URL encoding converts non ASCII characters into a format that can be transmitted over the Internet by replacing non ASCII characters with a "%" followed with 
   hexadecimal digits. URLs also can't contain spaces and encoding would replace a space character with a "+" or "%20". For HTML5, the default charset is UTF-8. </p> 
   
-  <h1> XHTML </h1>
+  <h1 id = "xhtml"> XHTML </h1>
 <p> XHTML is the stricter XML based version of HTML. XTHML stands for Extensible Hypertext Markup Language and it defines HTML as an XML application. XHTML is 
   available for all major browsers. In XHTML, all documents must be marked up correctly or be "well-formed". XHTML was designed to make HTML more extensible and 
   flexible to work with other data formats like XML. Browsers tend to ignore errors in HMTL pages and therefore displays the website despite errors, but in XHTML, it
@@ -388,42 +443,43 @@
   <h6> An XHTML project will be created in the future going over examples of this section, most likely when the HTMLEx project is completed. </h6> </i> </p>
   <!-- Go over examples in future created XHTML page -->
   
-  <h1> FORMS </h1>
+  <h1 id = "form"> FORMS </h1>
   
-  <h1> FORM ATTRIBUTES </h1>
+  <h1 id = "form_attribute"> FORM ATTRIBUTES </h1>
   
-  <h1> FORM ELEMENTS </h1>
+  <h1 id = "form_element"> FORM ELEMENTS </h1>
   
-  <h1> INPUT TYPES </h1>
+  <h1 id = "input_type"> INPUT TYPES </h1>
   
-  <h1> INPUT ATTRIBUTES </h1>
+  <h1 id = "input_attribute"> INPUT ATTRIBUTES </h1>
   
-  <h1> INPUT FORM ATTRIBUTES </h1>
+  <h1 id = "input_form_attribute"> INPUT FORM ATTRIBUTES </h1>
   
-  <h1> HTML CANVAS & SVG </h1>
+  <h1 id = "canvas"> HTML CANVAS & SVG </h1>
   <p> Sorry, this current browser developing this site doesn't support these features. Please look out for any changes until then. (NYI) </p>
 
-<h1> HTML MEDIA </h1>
+<h1 id = "media"> HTML MEDIA </h1>
 
-<h1> VIDEO </h1>
+<h1 id = "video"> VIDEO </h1>
 
-<h1> AUDIO </h1>
+<h1 id = "audio"> AUDIO </h1>
 
-<h1> PLUG-INS </h1>
+<h1 id = "plugin"> PLUG-INS </h1>
 
-<h1> YOUTUBE </h1>
+<h1 id = "youtube"> YOUTUBE </h1>
 
-<h1> HTML API GEOLOCATION </h1>
+<h1 id = "geolocation"> HTML API GEOLOCATION </h1>
 
-<h1> HTML API DRAG/DROP </h1>
+<h1 id = "drag/drop"> HTML API DRAG/DROP </h1>
 
-<h1> HTML API WEB STORAGE </h1>
+<h1 id = "web_storage"> HTML API WEB STORAGE </h1>
 
-<h1> HTML API WEB WORKERS </h1>
+<h1 id = "web_worker"> HTML API WEB WORKERS </h1>
 
-<h1> HTML API SSE </h1>
+<h1 id = "sse"> HTML API SSE </h1>
     
-  <address>
+<p id = "me"> </p>  
+<address>
     <br>
     <strong> <i> More About Me </i> </strong> <br>
     Created by <em> Walter Low. </em> <br>
