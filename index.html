@@ -295,7 +295,7 @@
 <p id = "head"> </p>
     <i> See Javascript section to learn more about Javascript in HTML. <br> The HTML "base" element specifies the base URL and targets all relative URLs in an HTML 
       page. The "base" tag can include a "href" and/or a "target" attribute. However, it's important to note that there can only be one "base" element in an HTML page. 
-    <i> In order to see examples of this section, view the head section of the HTML source code. </i> </p>
+    In order to see examples of this section, view the head section of the HTML source code. </i> </p>
   
   <h1> LAYOUT </h1>
   
@@ -312,10 +312,24 @@
   <h1> SYMBOLS </h1>
   
   <h1> EMOJIS </h1>
+<p> HTML emojis can be used from the UTF-8 charset. Emojis may look like images or icons, but they are actually inputted as letters and characters in the UTF-8 
+  charset. (UTF-8 covers almost all of the characters and symbols in the world). A web browser must know the character set used in the page in order to display an HTML
+  page correctly. This is why we include the "meta" tag <i> (see meta tag in head section of HTML source code) </i>. Although, if not specified, UTF-8 is the default 
+  charset in HTML. However, many UTF-8 characters can't be typed on keyboards (like emojis), so we will have to use numbers to display them. For example, A is 65, B
+  is 66, C is 67, and vice versa. The syntax for displaying characters using numbers is "&#number;". For example, to get the emoji with the heart eyes, it will be 
+  displayed as &#128525;. 
   
   <h1> CHARSET </h1>
   
   <h1> URL ENCODE </h1>
+<p> Uniform Resource Locators (URLs) are web addresses composed of words or Internet Protocol (IP) addresses. Web browsers request pages from web servers using a URL.
+  URLs addresses documents on the web. The format of a URL is <i> scheme://prefix.domain:port/path/filename </i>. <i> Scheme </i> defines the type of Internet service
+  used (most commmonly http or https). <i> Prefix </i> defines the domain prefix (most commonly www.). <i> Domain </i> defines the Internet domain name. <i> Port </i>
+  defines the port number at the host (default for http is 80). <i> Path </i> defines the path or root directory for the server. <i> Filename </i> defines the name
+  of a document/resource. Common URL schemes include http (used for common web pages unencrypted), https (used for secure web pages encrypted), ftp (downloading/
+  uploading files), and file (file on your computer). URLs are sent over the Internet only using the ASCII characters. Otherwise, the URL will have to be converted.
+  URL encoding converts non ASCII characters into a format that can be transmitted over the Internet by replacing non ASCII characters with a "%" followed with 
+  hexadecimal digits. URLs also can't contain spaces and encoding would replace a space character with a "+" or "%20". For HTML5, the default charset is UTF-8. </p> 
   
   <h1> XHTML </h1>
 <p> XHTML is the stricter XML based version of HTML. XTHML stands for Extensible Hypertext Markup Language and it defines HTML as an XML application. XHTML is 
