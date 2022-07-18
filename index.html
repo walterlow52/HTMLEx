@@ -509,6 +509,18 @@ For the complete reference of URL encoding, check <a href = "https://www.w3schoo
 <h1 id = "youtube"> YOUTUBE </h1>
 
 <h1 id = "geolocation"> HTML API GEOLOCATION </h1>
+<p> Now going into HTML APIs, the Geolocation API is used to find the location of the viewer. The API gets the geographical position of the user. However, because of
+  privacy reasons, the user must approve the API or else the API will not be able to track their location. Geolocation is commonly used in devices with GPS, like 
+  smartphones. The technical code is located in its own section in the Javasscript file.
+  <button onclick = "getLocation()"> Click to use the Location API </button>
+<p id = "location"> </p>
+<p> The button works by first checking if the Geolocation API is supported by the user's browser. If the browser doesn't support the Geolocation API, an error message 
+  will pop up. But if the API is supported, it runs the location method located in the Javascript file. If the method is successful, it returns the coordinates to the
+  display function and then the display function will display the coordinates to the HTML page. <br> It's all fun and games, until handling errors and rejections 
+  occur. Therefore, we must create a method to handle the errors (in JS file). We will also use other Geolocation methods like the watchPosition() method (returns the 
+  current position of the user continuously and updates when the user moves from the location; commonly used in GPS) and the clearWatch() method 
+  (stops the watchPosition() method). <br> Geolocation is very useful nowadays since it shows a user's position on a map and with that information, it can inform the 
+  user about location conditions and information like local news, points of interests for the user, and the commonly used GPS navigation systems. </p>
 
 <h1 id = "drag/drop"> HTML API DRAG/DROP </h1>
 
