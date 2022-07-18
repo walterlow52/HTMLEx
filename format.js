@@ -3,13 +3,14 @@ var locate = document.getElementById("location");
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
+    navigator.geolocation.watchPosition(showPosition);
   }
   else {
     locate.innerHTML = "Sorry, the geolocation API currently doesn't work on your browser."; 
   }
 }
 function showPosition(position) {
-  locate.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude; 
+  locate.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude + "<br>Accuracy: " + position.coords.accuracy + "<br>Altitude: " + position.coords.altitude + "<br>Altitude Accuracy: " + position.coords.altitudeAccuracy + "<br>Heading: " + position.coords.heading + "<br>Speed: " + position.coords.speed + "<br>Timestamp: " + position.timestamp; 
 }
 function showError(error) {
   switch(error.code) {
